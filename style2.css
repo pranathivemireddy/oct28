@@ -1,0 +1,47 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100px;
+    width:200px;
+    border: 1px solid #008000;
+    background-color: green;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+} */
+ /* Create a rectangle using the ::before pseudo-element */
+.container {
+    position: relative;
+    width: 200px;             
+    height: 100px;            
+    background-color: green; 
+    border: 2px solid green;   
+    margin: 50px auto;  
+}
+.container::after{
+    content: "";
+    position: absolute;
+    top: -50px;              
+    transform: translateX(50%); 
+    width: 90px;              
+    height: 90px;
+    background-color:white; 
+    border: 2px solid white;   
+    border-radius: 50%;  
+}
+.circle{
+    position: absolute;
+    top: 15px;
+    left:333px;            
+    transform: translateX(50%);
+    width:70px;              
+    height: 70px;
+    background-color:red; 
+    border: 2px solid red;   
+    border-radius: 50%;  
+} 
+
